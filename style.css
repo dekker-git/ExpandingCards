@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
 }
-
-body {
+header{
+  text-shadow:1px 1px 5px rgb(180, 180, 180);
+}
+body{
   font-family: "Arial";
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
 }
 
 .container {
@@ -18,26 +19,36 @@ body {
 }
 
 .panel {
+  width:100%;
+}
+
+.panel {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position:relative;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.5s ease-in, box-shadow 0.5s ease-in;
+}
+
+.panel:hover {
+  box-shadow:inset 0px 0px 2px 2px black;
+  transition:0.4s ease-in-out;
 }
 
 .panel h3 {
   font-size:1.3em;
   position:absolute;
   bottom:20px;
-  left:20px;
+  left:30px;
   margin:0;
   opacity:0;
+  text-shadow: 1px 1px 5px black;
 }
 
 .panel.active { 
