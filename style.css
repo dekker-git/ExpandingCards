@@ -3,6 +3,9 @@
 }
 header{
   text-shadow:1px 1px 5px rgb(180, 180, 180);
+  font-size:1.3em;
+  margin-left: 3%;
+  color:rgb(81, 80, 80);
 }
 body{
   font-family: "Arial";
